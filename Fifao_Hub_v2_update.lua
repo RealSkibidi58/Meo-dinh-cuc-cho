@@ -11,7 +11,7 @@ local Window = Fluent:CreateWindow({
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Darker",
-    MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
+    MinimizeKey = Enum.KeyCode.V -- Used when theres no MinimizeKeybind
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "Main Farm", Icon = "home" }),
@@ -2447,7 +2447,7 @@ ImageButton.Parent = ScreenGui
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
 ImageButton.Size = UDim2.new(0.0627121851, 0, 0.107579626, 0)
-ImageButton.Image = "rbxassetid://15970725955"
+ImageButton.Image = "rbxassetid://938107120310"
 
 UICorner.CornerRadius = UDim.new(0, 30)
 UICorner.Parent = ImageButton
@@ -6183,7 +6183,7 @@ Tabs.Misc:AddButton({
 	Title = "Rain Fruit",
 	Description = "Rain fruit (Fake)",
 	Callback = function()
-        for i, v in pairs(game:GetObjects("rbxassetid://15970729030")[1]:GetChildren()) do
+        for i, v in pairs(game:GetObjects("rbxassetid://938107120310")[1]:GetChildren()) do
             v.Parent = game.Workspace.Map
             v:MoveTo(game.Players.LocalPlayer.Character.PrimaryPart.Position + Vector3.new(math.random(-50, 50), 100, math.random(-50, 50)))
             if v.Fruit:FindFirstChild("AnimationController") then
